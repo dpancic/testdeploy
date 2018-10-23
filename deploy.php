@@ -62,7 +62,7 @@ foreach($commands AS $command){
     $log  .= "\$ $command\n".trim($tmp)."\n";
 }
 $log .= "\n";
-file_put_contents ('deploy-log.txt',$log,FILE_APPEND);
+file_put_contents ('/var/log/apahe2/deploy-log.txt',$log,FILE_APPEND);
 echo $output; 
 ?>
 </pre>
